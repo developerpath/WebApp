@@ -65,7 +65,7 @@ export default class App extends Component {
             if (responseJson.name){
               let sr = new Date(responseJson.sys.sunrise*1000).toLocaleTimeString();
               let ss = new Date(responseJson.sys.sunset*1000).toLocaleTimeString();
-              let is = "https://raw.githubusercontent.com/developerpath/weatherApp/master/WeatherAPP/" +
+              let is = "https://raw.githubusercontent.com/developerpath/weatherApp/master/images/" +
                   responseJson.weather[0].icon +".png";
               let t = Math.round(responseJson.main.temp)-273;
               this.setState({
